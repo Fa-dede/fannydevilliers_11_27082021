@@ -1,0 +1,20 @@
+.navbar{
+
+    font-size: 24px;
+    
+    & ul {
+        position: relative;
+        top: -70px;
+        float: right;
+        flex-flow: wrap;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+
+        & li{
+            margin-right: 55px;
+            cursor: pointer;
+            
+        }
+    }
+}
