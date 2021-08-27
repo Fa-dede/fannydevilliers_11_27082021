@@ -11,7 +11,7 @@ function App() {
       <Switch>
         <Route  path='/' exact component={Home}/>  
         <Route  path='/about' component={About}/>  
-        <Route  path='/error404' component={Error}/>
+        <Route component={Error}/>
       </Switch>
       
     </BrowserRouter>

@@ -13,8 +13,13 @@
 
         & li{
             margin-right: 55px;
-            cursor: pointer;
-            
+            cursor: pointer;       
+            & a{
+                text-decoration: none;
+            }     
+            & a:hover{
+                text-decoration: underline;
+            }
         }
     }
 }
