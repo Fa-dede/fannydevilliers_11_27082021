@@ -1,5 +1,7 @@
 import { Component } from "react";
+import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
+
 
 class Cards extends Component {
     render() {
@@ -7,12 +9,18 @@ class Cards extends Component {
 
         return (
             <div className='card'>
-                <Link title={title} to={`/location/${id}`} />
-                <img className='card-cover' src={src} alt='location' />
-                <p className='title'>{title}</p>
+                <Link to={`/locations/${id}`} title={title} className='card'>
+                    <img className='card-cover' src={src} alt='location' />
+                    <p className='title'>{title}</p>
+                </Link>
             </div>
         );
     }
+
+}
+
+Cards.propTypes = {
+    title: PropTypes.string.isRequired
 }
 
 export default Cards;

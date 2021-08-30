@@ -1,6 +1,7 @@
 .navbar{
 
     font-size: 24px;
+
     
     & ul {
         position: relative;
@@ -16,6 +17,7 @@
             cursor: pointer;       
             & a{
                 text-decoration: none;
+                color: $color1;
             }     
             & a:hover{
                 text-decoration: underline;

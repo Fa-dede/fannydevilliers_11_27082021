@@ -1,0 +1,21 @@
+.cover-image{
+    margin-bottom: 20px;
+}
+.dropdown-about {
+    width: 65%;
+    display: block;
+    margin: auto;
+    padding : 15px 20px; 
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    z-index: 9;
+
+    .chevron-state{
+        color: #fff;
+    }
+    .details-items{
+        color: $color1;
+    }
+    
+}

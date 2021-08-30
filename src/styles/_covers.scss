@@ -1,11 +1,18 @@
+
+ 
  .cover-image{
      border-radius: 25px;
-     width: 85%;
+     width: 84%;
      display: block;
-     margin: auto;
      margin-left: 100px;
      filter: brightness(60%);
+     max-height: 415px;
+     object-fit: cover;
+    &-locations {
+        filter: brightness(100%);
+    }
  }
+
 
  .motto{
      color: #fff;
