@@ -1,6 +1,9 @@
 // *{
 //     border: black solid 1px;
 // }
+.error-page{
+    color: $color1;
+}
 
 .number-of-error{
     font-size: 288px;
@@ -25,5 +28,7 @@
     font-size: 500;
     font-size: 18px;
     margin-top: 180px;
+    text-decoration: unset;
+    color: $color1;
 
 }
