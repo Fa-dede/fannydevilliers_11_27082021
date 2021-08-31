@@ -1,0 +1,49 @@
+
+.cover-image{
+    border-radius: 25px;
+    width: 84%;
+    display: block;
+    margin-left: 100px;
+    filter: brightness(60%);
+    max-height: 415px;
+    object-fit: cover;
+   &-locations {
+       filter: brightness(100%);
+   }
+}
+
+.left-arrow, .right-arrow{
+    cursor: pointer;
+    position: absolute;
+    top: 38%;
+    transform: translateY(-50%);
+    z-index: 99;
+    color: #fff;
+    font-size: 70px;
+    height: 300px;
+    opacity: .6;
+
+    &:hover{
+        opacity: 1;
+        transition: 200ms;
+    }
+}
+
+.left-arrow{
+   left: 106px;
+}
+
+.right-arrow{
+    right: 136px;
+}
+
+.counter{
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+
+}

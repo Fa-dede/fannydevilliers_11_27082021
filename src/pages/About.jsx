@@ -15,7 +15,7 @@ class About extends Component {
                 <img className='cover-image' src={coverImage} alt='background' />
                 <div className='details'>
                     {datas.map((elt) => (
-                        <Dropdown title={elt.title} content={elt.content} name='dropdown-about' nameOfClass='dropdown-menu' />))}
+                        <Dropdown key={elt.id} title={elt.title} content={elt.content} name='dropdown-about' nameOfClass='dropdown-menu' />))}
                 </div>
                 <Footer />
             </>
