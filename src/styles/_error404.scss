@@ -11,24 +11,39 @@
     justify-content: center;
     margin-top: 150px ;
     margin-bottom: 60px;
+    @media (max-width: 600px){
+        font-size: 25vw;
+    }
 
 }
 
 .error-message{
-    display: flex;
+    // border: 1px solid black;
+    display: block;
+    margin: auto;
     justify-content: center;
+    text-align: center;
     font-weight: 500;
     font-size: 36px;
+    @media (max-width: 600px){
+        width: 70%;
+        font-size: 5vw;
+    }
 }
 
 .home-return{
     display: flex;
     justify-content: center;
+    text-align: center;
     cursor: pointer;
     font-size: 500;
     font-size: 18px;
     margin-top: 180px;
+    margin-bottom: 100px;
     text-decoration: unset;
     color: $color1;
+    @media (max-width: 600px){
+        font-size: 5vw;
+    }
 
 }

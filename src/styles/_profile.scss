@@ -1,22 +1,22 @@
 .profile-container{
-    display: block;
+    display: flex;
     float: right;
     position: relative;
-    bottom: 70px;
-    margin-right: 150px;
+    bottom: 16vw;
+    @media (max-width: 600px){
+        top: 15px;
+    }
     
 }
 
 .host-name{
-    font-size: 18px;
+    font-size: 2.8vw;
     font-weight: 500;
     display: inline;
-    position: relative;
-    bottom: 40px;
     margin-right: 10px;
 }
 
 .profile-picture{
     border-radius: 50%;
-    width: 64px;
+    width: 10vw;
 }

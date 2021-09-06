@@ -2,9 +2,15 @@
 
 .details-container{
     display: flex;
-    width: 91%;
+    width: 100%;
     justify-content: space-between;
     margin-right: unset;
+
+    @media (max-width: 600px){
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
 
     // border : solid 1px black
 }
@@ -12,6 +18,10 @@
 .dropdown{
     min-width: 46%;
     max-width: 46%;
+
+    @media (max-width: 600px){
+        min-width: 100%;
+    }
 }
 
 .dropdown-menu {

@@ -1,15 +1,24 @@
-
+.carousel{
+    display: flex;
+    align-items: center;
+}
 
 .left-arrow, .right-arrow{
-    cursor: pointer;
     position: absolute;
-    top: 38%;
-    transform: translateY(-50%);
+    cursor: pointer;
     z-index: 99;
     color: #fff;
-    font-size: 70px;
-    height: 300px;
+    font-size: 6vw;
     opacity: .6;
+    margin: 0 5vw;
+    z-index: 99;
+    padding : 0 8vw;
+    height: auto;
+
+    @media (max-width: 600px){
+        padding : 0 2vw;
+        font-size: 9vw;
+    }
 
     &:hover{
         opacity: 1;
@@ -18,11 +27,22 @@
 }
 
 .left-arrow{
-   left: 106px;
+   left: 0;
 }
 
 .right-arrow{
-    right: 136px;
+    right: 0;
+}
+
+.cover-image-locations{
+    border-radius: 20px;
+    max-height: 35vw ;
+    min-height: 35vw;
+    min-width: 100%;
+    object-fit: cover;
+    @media (max-width: 600px){
+        min-height: 70vw;
+    }
 }
 
 .counter{
@@ -35,3 +55,4 @@
     font-weight: 500;
 
 }
+

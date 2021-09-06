@@ -1,41 +1,54 @@
+
+
 .container-locations{
-    margin: 30px 0 0 100px;
     color: #FF6060;
+    margin: 4vw 0;
 }
 
 .title-of-location{
-    font-size: 36px;
+    font-size: 4vw;
     font-weight: 500;
-    max-width: 80%;
+    // border: solid 1px black;
+
+    @media (max-width: 600px){
+        font-size: 6vw;
+    }
 }
 
 .place-of-location{
     margin-top: 10px;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 2.5vw;
 }
 
 .tag-container{
     margin-top: 20px;
-    margin-bottom: -50px;
+    flex-wrap: wrap;
 }
 .tags{
     display: inline-block;
     margin-right: 10px;
     background-color: $color1;
-    border-radius: 10px;
+    border-radius: 1.5vw;
     color: #fff;
     padding: 2px 30px;
+    font-size: 3.5vw;
 
 }
 
 .stars-container{
-    // border: 1px solid black;
-    display: inline;
-    float: right;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
     position: relative;
-    top: 20px;
-    left: 180px;
+    bottom: 30px;
     font-size: 24px;
+    @media (max-width: 600px){
+        justify-content: flex-start;
+        bottom: 1 0px;
+        margin-bottom: 10px;
+    font-size: 5vw;
+
+    }
     
 }

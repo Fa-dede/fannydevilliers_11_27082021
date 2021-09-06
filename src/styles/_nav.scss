@@ -2,7 +2,7 @@
 
     font-size: 1.5vw;
     @media (max-width: 600px){
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
 
@@ -14,16 +14,22 @@
         // border: 1px solid black;
         gap: 5vw;
 
-
         & li{
-            cursor: pointer;   
+            cursor: pointer;  
+
+            
             & a{
                 text-decoration: none;
                 color: $color1;
+                @media (max-width: 600px){
+                    text-transform: uppercase;
+                }
+
             }     
             & a:hover{
                 text-decoration: underline;
             }
+            
         }
     }
 }

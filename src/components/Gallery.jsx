@@ -25,7 +25,7 @@ class Gallery extends Component {
                 <BsChevronLeft className='left-arrow' onClick={slidePrev} />
                 <BsChevronRight className='right-arrow' onClick={slideNext} />
 
-                <img className='cover-image cover-image-locations' src={pictures[currentPicture]} alt="gallery" />
+                <img className='cover-image-locations' src={pictures[currentPicture]} alt="gallery" />
                 <span className='counter'>{currentPicture + 1}/{length}</span>
 
             </div>
