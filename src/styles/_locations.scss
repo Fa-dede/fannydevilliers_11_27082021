@@ -23,7 +23,9 @@
 
 .tag-container{
     margin-top: 20px;
+    display: flex;
     flex-wrap: wrap;
+    gap: 10px;
 }
 .tags{
     display: inline-block;
@@ -32,7 +34,12 @@
     border-radius: 1.5vw;
     color: #fff;
     padding: 2px 30px;
-    font-size: 3.5vw;
+    @media (max-width: 600px){
+        font-size: 3.5vw;
+
+    }
+    
+
 
 }
 
@@ -41,11 +48,11 @@
     width: 100%;
     justify-content: flex-end;
     position: relative;
-    bottom: 30px;
+    bottom: 95px;
     font-size: 24px;
     @media (max-width: 600px){
         justify-content: flex-start;
-        bottom: 1 0px;
+        bottom: 25px;
         margin-bottom: 10px;
     font-size: 5vw;
 

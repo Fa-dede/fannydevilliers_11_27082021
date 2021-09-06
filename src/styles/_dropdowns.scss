@@ -5,11 +5,15 @@
     width: 100%;
     justify-content: space-between;
     margin-right: unset;
+    position: relative;
+    bottom: 80px;
 
     @media (max-width: 600px){
+        
         flex-wrap: wrap;
         gap: 15px;
-        margin-bottom: 20px;
+        bottom: unset;
+       
     }
 
     // border : solid 1px black
