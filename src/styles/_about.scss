@@ -1,8 +1,10 @@
-.cover-image{
-    margin-bottom: 20px;
+.details{
+    margin: 5vw 0;
+
 }
+
 .dropdown-about {
-    width: 65%;
+    width: 80%;
     display: block;
     margin: auto;
     padding : 15px 20px; 
@@ -10,6 +12,12 @@
     border-radius: 10px;
     position: relative;
     z-index: 9;
+
+    @media (max-width: 600px){
+        width: 100%;
+        padding: 0;
+        padding-bottom: 4vw;
+    }
 
     .chevron-state{
         color: #fff;

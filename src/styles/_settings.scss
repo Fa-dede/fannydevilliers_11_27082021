@@ -2,6 +2,13 @@ $color1 : #FF6060;
 
 * {
     font-family: 'Montserrat', sans-serif;
-    // color: $color1;
     margin: unset;
+}
+
+body{
+    margin: 2.5vw 13vw;
+    @media (max-width: 600px) {
+        margin: 3vw 5vw;
+      }
+    height: 100%;
 }

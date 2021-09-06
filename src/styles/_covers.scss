@@ -1,24 +1,31 @@
-
- 
- .cover-image{
-     border-radius: 25px;
-     width: 84%;
-     display: block;
-     margin-left: 100px;
-     filter: brightness(60%);
-     max-height: 415px;
-     object-fit: cover;
-    &-locations {
-        filter: brightness(100%);
-    }
- }
-
-
+.banner-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4vw;
+}
+.cover-image{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 111px;
+    object-fit: cover;
+    border-radius: 2vw;
+    filter: brightness(60%);
+  
+   &-locations {
+       filter: brightness(100%);
+   }
+}
  .motto{
      color: #fff;
-     position: relative;
-     bottom: 130px;
+     position: absolute;
      font-weight: 500;
-     text-align: center;
-     font-size: 48px;
+     font-size: 2.5vw;
+
+     @media (max-width: 600px) {
+        font-size: 20px;
+        margin: 30px;
+        flex-wrap: wrap;
+      }
  }

@@ -28,8 +28,6 @@ class Gallery extends Component {
                 <img className='cover-image cover-image-locations' src={pictures[currentPicture]} alt="gallery" />
                 <span className='counter'>{currentPicture + 1}/{length}</span>
 
-
-
             </div>
         );
     }

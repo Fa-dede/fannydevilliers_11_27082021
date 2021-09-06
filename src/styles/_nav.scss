@@ -1,20 +1,22 @@
 .navbar{
 
-    font-size: 24px;
+    font-size: 1.5vw;
+    @media (max-width: 600px){
+        font-size: 4vw;
+    }
+
 
     
     & ul {
-        position: relative;
-        top: -70px;
-        float: right;
-        flex-flow: wrap;
-        list-style-type: none;
         display: flex;
-        justify-content: space-between;
+        padding-inline-start: unset;
+        list-style-type: none;
+        // border: 1px solid black;
+        gap: 5vw;
+
 
         & li{
-            margin-right: 55px;
-            cursor: pointer;       
+            cursor: pointer;   
             & a{
                 text-decoration: none;
                 color: $color1;

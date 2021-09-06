@@ -12,8 +12,11 @@ class Home extends Component {
             <>
                 <Header />
 
-                <img className='cover-image' src={coverImage} alt='background' />
-                <h1 className='motto'>Chez vous, partout et ailleurs</h1>
+                <div className='banner-container'>
+                    <img className='cover-image' src={coverImage} alt='background' />
+                    <h1 className='motto'>Chez vous, partout et ailleurs</h1>
+                </div>
+
                 <main className='card-container'>
                     {data.map((elt) => (
                         <div key={elt.id} className='location-elt'>
