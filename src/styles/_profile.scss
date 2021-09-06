@@ -2,7 +2,10 @@
     display: flex;
     float: right;
     position: relative;
-    bottom: 16vw;
+    bottom: 170px;
+    @media (max-width: 1140px){
+        bottom: 120px;
+    }
     @media (max-width: 600px){
         top: 15px;
     }
