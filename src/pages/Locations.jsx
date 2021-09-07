@@ -26,7 +26,11 @@ class Locations extends Component {
                 <Gallery content={pictures} />
                 <main className='container-locations'>
                     <h1 className='title-of-location'>{title}</h1>
+                    <HostProfile content={host} />
+
                     <h2 className='place-of-location'> {location}</h2>
+
+                    <Ratings content={parseInt(rating)} />
 
                     <div className='tag-container'>
                         {tags.map((tag, index) => (
@@ -34,9 +38,7 @@ class Locations extends Component {
                         ))}
                     </div>
 
-                    <HostProfile content={host} />
 
-                    <Ratings content={parseInt(rating)} />
 
                     <section className='details-container'>
                         <Dropdown title='Description' content={description} name='dropdown' nameOfClass='dropdown-menu' />

@@ -1,71 +1,71 @@
-@import './keyframes';
+@import "./keyframes";
 
-.details-container{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-right: unset;
+.details-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-right: unset;
+  position: relative;
+  margin-top: 20px;
+
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    gap: 15px;
+    bottom: unset;
     position: relative;
-    bottom: 80px;
+    top: 50px;
+    margin-bottom: 70px;
+  }
 
-    @media (max-width: 600px){
-        
-        flex-wrap: wrap;
-        gap: 15px;
-        bottom: unset;
-       
-    }
-
-    // border : solid 1px black
+  // border : solid 1px black
 }
 
-.dropdown{
-    min-width: 46%;
-    max-width: 46%;
+.dropdown {
+  min-width: 46%;
+  max-width: 46%;
 
-    @media (max-width: 600px){
-        min-width: 100%;
-    }
+  @media (max-width: 600px) {
+    min-width: 100%;
+  }
 }
 
 .dropdown-menu {
-    color: #fff ;
-    padding : 15px 20px; 
-    cursor: pointer;
-    background-color: $color1;
-    height: 25px;
-    border-radius: 10px;
-    position: relative;
-    z-index: 9;
+  color: #fff;
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: $color1;
+  height: 25px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 9;
 }
 
-
-.dropdown-title{
-    display: inline;
-    color: #fff;
-    font-weight: 500;
-    font-size: 18px;
+.dropdown-title {
+  display: inline;
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.chevron-state{
-    font-size: 30px;
-    display: inline;
-    float: right;
-    cursor: pointer;
-    position: relative;
-    bottom: 5px;
+.chevron-state {
+  font-size: 30px;
+  display: inline;
+  float: right;
+  cursor: pointer;
+  position: relative;
+  bottom: 5px;
 }
 
-.details-items{
-    background-color: #F7F7F7;
-    margin-top: -10px;
-    padding: 40px 20px;
-    display: block;
-    border-radius: 0 0 10px 10px;
-    animation: slideDown 1000ms;
+.details-items {
+  background-color: #f7f7f7;
+  margin-top: -10px;
+  padding: 40px 20px;
+  display: block;
+  border-radius: 0 0 10px 10px;
+  animation: slideDown 1000ms;
 
-    li{
-        list-style-type: none;
-        padding-inline-start: none;
-    }
+  li {
+    list-style-type: none;
+    padding-inline-start: none;
+  }
 }

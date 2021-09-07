@@ -1,25 +1,20 @@
-.profile-container{
-    display: flex;
-    float: right;
+.profile-container {
+  display: flex;
+  float: right;
+  @media (max-width: 600px) {
     position: relative;
-    bottom: 170px;
-    @media (max-width: 1140px){
-        bottom: 120px;
-    }
-    @media (max-width: 600px){
-        top: 15px;
-    }
-    
+    top: 30vw;
+  }
 }
 
-.host-name{
-    font-size: 2.8vw;
-    font-weight: 500;
-    display: inline;
-    margin-right: 10px;
+.host-name {
+  font-size: 2.8vw;
+  font-weight: 500;
+  display: inline;
+  margin-right: 10px;
 }
 
-.profile-picture{
-    border-radius: 50%;
-    width: 10vw;
+.profile-picture {
+  border-radius: 50%;
+  width: 10vw;
 }
